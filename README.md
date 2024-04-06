@@ -82,6 +82,8 @@ endmodule
 
 
 **Output Timing Waveform**
+
+
 **Full adder**
 
 ![Screenshot 2024-04-06 213311](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/abd5a477-6c63-4f0d-8726-611778570193)
