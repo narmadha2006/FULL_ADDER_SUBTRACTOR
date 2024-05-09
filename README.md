@@ -49,48 +49,39 @@ Write the detailed procedure here
 Developed by: NARMADHA S  RegisterNumber: 212223220065
 
 ```
-**full adder**
-module full_adder(a,b,cin,sum,carry);
-input a,b,cin;
-output sum,carry;
-wire w1,w2,w3,w4;       
-xor(w1,a,b);
-xor(sum,w1,cin);        
-
-and(w2,a,b);
-and(w3,b,cin);
-and(w4,cin,a);
-
-or(carry,w2,w3,w4);
-endmodule
-
-**full subtractor**
-module full_subtracter(a,b,Bin,BO,DIFF);
-input a,b,Bin;
-output BO,DIFF;
-assign DIFF = a ^ b ^ Bin;
-  assign BO = (a & b) | ((a ^ b) & Bin);
+module fulladdsub(a,b,c,sum,carry,BO,DIFF);
+input a,b,c;
+output sum,carry,BO,DIFF;
+assign sum=a^b^c;
+assign carry= a&b | a&c | b&c;
+wire a0;
+not (a0,a);
+assign BO= b&c | a0&c | a0&b;
+assign DIFF=a^b^c;
 endmodule
 ```
 
 **RTL Schematic**
 
-![Screenshot 2024-04-06 213255](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/ffb3362d-4f27-466d-bc26-cb57448ac330)
+![Screenshot 2024-05-09 171142](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/12ae8965-13e9-461c-8367-4e9618177455)
 
-![Screenshot 2024-04-06 213302](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/18fb16f2-dfca-4a1a-8c25-3da7f7ffa30d)
 
+**TRUTH TABLE**
+
+**FULL ADDER**
+
+![Screenshot 2024-05-09 171154](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/cd50e036-6f89-4e40-b65b-63d5ba5978df)
+
+**FULL SUBTRACTOR**
+
+
+![Screenshot 2024-05-09 171204](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/9fc751cf-128d-4c51-be3d-e07276a90656)
 
 
 **Output Timing Waveform**
 
+![Screenshot 2024-05-09 171215](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/f0023fcf-e57b-42ed-b812-b1a3565d3c35)
 
-**Full adder**
-
-![Screenshot 2024-04-06 213311](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/abd5a477-6c63-4f0d-8726-611778570193)
-
-**Full subtractor**
-
-![Screenshot 2024-04-06 213321](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/6cafa33d-30e1-4e5f-bf71-5447862badd0)
 
 **Result:**
 
