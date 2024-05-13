@@ -38,13 +38,28 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
+FULL ADDER:
+
+![image](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/04841cd1-8a1a-4af8-a76a-cc566cce7973)
+
+FULL SUBTRACTOR:
+
+![image](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/1490fe8d-6bb2-4464-8fad-94c80275947f)
+
 **Procedure**
 
-Write the detailed procedure here
+ STEP 1: Use module project name(input,output) to start the Verilog programmming.
+
+STEP 2: Assign inputs and outputs using the word input and output respectively.
+
+STEP 3: Use defined keywords like wire,assign and required logic gates to represent the boolean expression.
+
+STEP 4: Use each output to represnt onre for differnce and the other for borrow.
+
+STEP 5: End the verilog program using keyword endmodule.
+
 
 **Program:**
-
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. 
 
 Developed by: NARMADHA S  RegisterNumber: 212223220065
 
@@ -65,22 +80,9 @@ endmodule
 
 ![Screenshot 2024-05-09 171142](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/12ae8965-13e9-461c-8367-4e9618177455)
 
-
-**TRUTH TABLE**
-
-**FULL ADDER**
-
-![Screenshot 2024-05-09 171154](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/cd50e036-6f89-4e40-b65b-63d5ba5978df)
-
-**FULL SUBTRACTOR**
-
-
-![Screenshot 2024-05-09 171204](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/9fc751cf-128d-4c51-be3d-e07276a90656)
-
-
 **Output Timing Waveform**
 
-![Screenshot 2024-05-09 171215](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/f0023fcf-e57b-42ed-b812-b1a3565d3c35)
+![image](https://github.com/narmadha2006/FULL_ADDER_SUBTRACTOR/assets/151390280/58f52b65-5d5a-4820-8169-741a700b4520)
 
 
 **Result:**
